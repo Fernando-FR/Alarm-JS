@@ -9,9 +9,43 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <audio id="audio" src="./assets/alarm.mp4"></audio>
-    <h2 id="alarmPreview">Alarme definido para: 19:25</h2>
-    <h1 id="cloak"></h1>
-    <h2 id="date">Quarta-Feira,6 de Outubro,2021</h2>
+    <div class="wrapper">
+        <audio id="audio" src="./assets/alarm.mp4"></audio>
+        <h2 id="alarmPreview">Alarme definido para: 19:25</h2>
+        <h1 id="clock"></h1>
+        <h2 id="date"></h2>
+        <button id="startButton">Começar</button>
+        <button id="stopButton">Parar Alarme</button>
+        
+        <div id="blackscreen"></div>
+        <div id="options">
+            <header id="options-header">
+                <h2>Configurar Alarme</h2>
+                <button id="closeOptions">X</button>
+            </header>
+            <div id="options-title">
+                <label for="inputTitle">Nome do Alarme</label>
+                <input id="inputTitle" type="text">
+            </div>
+            <div id="options-time">
+                <div class="options-time-section">
+                    <label for="hoursSelect">Horas</label>
+                    <select id="hoursSelect"></select>
+                </div>
+                <div class="options-time-section">
+                    <label for="minutesSelect">Minutos</label>
+                    <select id="minutesSelect"></select>
+                </div>
+                <div class="options-time-section">
+                    <label for="secondsSelect">Segundos</label>
+                    <select id="secondsSelect"></select>
+                </div>
+            </div>
+            <div id="options-buttons">
+                <button id="start">Começar</button>
+                <button id="test">Testar Alarme</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

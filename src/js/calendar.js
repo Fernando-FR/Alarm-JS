@@ -1,8 +1,8 @@
-export default new class Calendar
+export default class Calendar
 {
-    constructor()
+    constructor(date)
     {
-        this.date = new Date();
+        this.date = date;
     }
     getWeakDay()
     {
@@ -85,6 +85,6 @@ export default new class Calendar
     }
     getFullCalendar()
     {
-        return `${this.getWeakDay()},${this.getMonthDay()} de ${this.getMonth()},${this.getYear()}`;
+        return `${this.getWeakDay()}, ${this.getMonthDay()} de ${this.getMonth()}, ${this.getYear()}`;
     }
 }
