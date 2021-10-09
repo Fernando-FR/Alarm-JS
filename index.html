@@ -11,7 +11,7 @@
 <body>
     <div class="wrapper">
         <audio id="audio" src="./assets/alarm.mp4"></audio>
-        <h2 id="alarmPreview">Alarme definido para: 19:25</h2>
+        <h2 id="alarmPreview"></h2>
         <h1 id="clock"></h1>
         <h2 id="date"></h2>
         <button id="startButton">Começar</button>
@@ -45,6 +45,17 @@
                 <button id="start">Começar</button>
                 <button id="test">Testar Alarme</button>
             </div>
+        </div>
+        <div id="alarm-blackscreen"></div>
+        <div id="alarm">
+            <header id="alarm-header">
+                <h2 id="alarm-title"></h2>
+                <button id="preview-header-close">X</button>
+                <button id="alarm-header-close">X</button>
+            </header>
+            <h1 id="alarmTime"></h1>
+            <button id="preview-close">Encerrar</button>
+            <button id="alarm-close">Encerrar</button>
         </div>
     </div>
 </body>
